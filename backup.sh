@@ -12,4 +12,4 @@ aws s3 cp "neo4j_${now}".tar.gz s3://secoda-backup/
 aws s3 cp "auth_${now}".tar.gz s3://secoda-backup/
 aws s3 cp "es_${now}".tar.gz s3://secoda-backup/
 
-rm -r "auth_${now}.tar.gz" "neo4j_${now}.tar.gz" "es_${now}.tar.gz" "mysql_${now}.tar.gz"
+rm -f "auth_${now}.tar.gz" "neo4j_${now}.tar.gz" "es_${now}.tar.gz" "mysql_${now}.tar.gz"
